@@ -10,14 +10,14 @@ using UnityEngine;
 
 namespace rounds_mod.Cards
 {
-    class Maneuver : CustomCard
+    class FlyByBlocking : CustomCard
     {
         public override void SetupCard(CardInfo cardInfo, Gun gun, ApplyCardStats cardStats, CharacterStatModifiers statModifiers, Block block)
         {
             UnityEngine.Debug.Log($"[{rounds_mod.ModInitials}][Card] {GetTitle()} has been setup.");
             block.forceToAdd = -10f;
-            statModifiers.health = 1.2f;
-            block.cdAdd = 0.25f;
+            statModifiers.health = 0.25f;
+            block.cdMultiplier = 0.1f;
             //Edits values on card itself, which are then applied to the player in `ApplyCardStats`
         }
         public override void OnAddCard(Player player, Gun gun, GunAmmo gunAmmo, CharacterData data, HealthHandler health, Gravity gravity, Block block, CharacterStatModifiers characterStats)
@@ -34,11 +34,11 @@ namespace rounds_mod.Cards
 
         protected override string GetTitle()
         {
-            return "Jump backwards when you block.";
+            return "fly by blocking";
         }
         protected override string GetDescription()
         {
-            return "Jump backwards when you block.";
+            return "flay backwards when you block.";
         }
         protected override GameObject GetCardArt()
         {
@@ -54,16 +54,16 @@ namespace rounds_mod.Cards
             {
                 new CardInfoStat()
                 {
-                    positive = false,
+                    positive = true,
                     stat = "Block cd",
-                    amount = "+0.25s",
+                    amount = "reduced by 90%",
                     simepleAmount = CardInfoStat.SimpleAmount.notAssigned
                 },
                  new CardInfoStat()
                 {
-                    positive = true,
+                    positive = false,
                     stat = "Health",
-                    amount = "+20%",
+                    amount = "-75%",
                     simepleAmount = CardInfoStat.SimpleAmount.notAssigned
                 },
             };

@@ -33,9 +33,8 @@ namespace rounds_mod
         }
         void Start()
         {
-            CustomCard.BuildCard<Maneuver>();
+            CustomCard.BuildCard<FlyByBlocking>();
             instance = this;
-
         }
     }
 }
