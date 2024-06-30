@@ -10,19 +10,23 @@ using UnityEngine;
 
 namespace rounds_mod.Cards
 {
-    class FlyByBlocking : CustomCard
+    class railgun : CustomCard
     {
         public override void SetupCard(CardInfo cardInfo, Gun gun, ApplyCardStats cardStats, CharacterStatModifiers statModifiers, Block block)
         {
             UnityEngine.Debug.Log($"[{rounds_mod.ModInitials}][Card] {GetTitle()} has been setup.");
-            block.forceToAdd = -10f;
-            statModifiers.health = 0.25f;
-            block.cdMultiplier = 0.1f;
+            gun.ignoreWalls = true;
+
+            gun.projectileSpeed = 100f;
+            gun.bursts = 20;
+            gun.timeBetweenBullets = 0.00000000001f;
+            gun.chargeDamageMultiplier = 1;
             //Edits values on card itself, which are then applied to the player in `ApplyCardStats`
         }
         public override void OnAddCard(Player player, Gun gun, GunAmmo gunAmmo, CharacterData data, HealthHandler health, Gravity gravity, Block block, CharacterStatModifiers characterStats)
         {
             UnityEngine.Debug.Log($"[{rounds_mod.ModInitials}][Card] {GetTitle()} has been added to player {player.playerID}.");
+            gunAmmo.maxAmmo = 1;
             //Edits values on player when card is selected
         }
         public override void OnRemoveCard(Player player, Gun gun, GunAmmo gunAmmo, CharacterData data, HealthHandler health, Gravity gravity, Block block, CharacterStatModifiers characterStats)
@@ -34,11 +38,11 @@ namespace rounds_mod.Cards
 
         protected override string GetTitle()
         {
-            return "fly by blocking";
+            return "railgun";
         }
         protected override string GetDescription()
         {
-            return "flay backwards when you block.";
+            return "CardDescription";
         }
         protected override GameObject GetCardArt()
         {
@@ -55,17 +59,10 @@ namespace rounds_mod.Cards
                 new CardInfoStat()
                 {
                     positive = true,
-                    stat = "reduced block cd",
-                    amount = "90%",
+                    stat = "Effect",
+                    amount = "No",
                     simepleAmount = CardInfoStat.SimpleAmount.notAssigned
-                },
-                 new CardInfoStat()
-                {
-                    positive = false,
-                    stat = "health",
-                    amount = "-75%",
-                    simepleAmount = CardInfoStat.SimpleAmount.notAssigned
-                },
+                }
             };
         }
         protected override CardThemeColor.CardThemeColorType GetTheme()

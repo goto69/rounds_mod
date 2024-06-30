@@ -34,6 +34,10 @@ namespace rounds_mod
         void Start()
         {
             CustomCard.BuildCard<FlyByBlocking>();
+            CustomCard.BuildCard<HeliumBloon>();
+            CustomCard.BuildCard<HeliumFillledBullets>();
+            CustomCard.BuildCard<youCantMiss>();
+            CustomCard.BuildCard<railgun>();
             instance = this;
         }
     }

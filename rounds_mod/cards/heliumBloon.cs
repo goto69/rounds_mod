@@ -10,19 +10,18 @@ using UnityEngine;
 
 namespace rounds_mod.Cards
 {
-    class FlyByBlocking : CustomCard
+    class HeliumBloon : CustomCard
     {
         public override void SetupCard(CardInfo cardInfo, Gun gun, ApplyCardStats cardStats, CharacterStatModifiers statModifiers, Block block)
         {
             UnityEngine.Debug.Log($"[{rounds_mod.ModInitials}][Card] {GetTitle()} has been setup.");
-            block.forceToAdd = -10f;
-            statModifiers.health = 0.25f;
-            block.cdMultiplier = 0.1f;
+            statModifiers.sizeMultiplier = 2f;
             //Edits values on card itself, which are then applied to the player in `ApplyCardStats`
         }
         public override void OnAddCard(Player player, Gun gun, GunAmmo gunAmmo, CharacterData data, HealthHandler health, Gravity gravity, Block block, CharacterStatModifiers characterStats)
         {
             UnityEngine.Debug.Log($"[{rounds_mod.ModInitials}][Card] {GetTitle()} has been added to player {player.playerID}.");
+            gravity.gravityForce = -100f;
             //Edits values on player when card is selected
         }
         public override void OnRemoveCard(Player player, Gun gun, GunAmmo gunAmmo, CharacterData data, HealthHandler health, Gravity gravity, Block block, CharacterStatModifiers characterStats)
@@ -34,11 +33,11 @@ namespace rounds_mod.Cards
 
         protected override string GetTitle()
         {
-            return "fly by blocking";
+            return "Helium bloon";
         }
         protected override string GetDescription()
         {
-            return "flay backwards when you block.";
+            return "you become a helium ballon wehn jumping";
         }
         protected override GameObject GetCardArt()
         {
@@ -55,17 +54,17 @@ namespace rounds_mod.Cards
                 new CardInfoStat()
                 {
                     positive = true,
-                    stat = "reduced block cd",
-                    amount = "90%",
+                    stat = "size",
+                    amount = "200%",
                     simepleAmount = CardInfoStat.SimpleAmount.notAssigned
                 },
-                 new CardInfoStat()
+                new CardInfoStat()
                 {
-                    positive = false,
-                    stat = "health",
-                    amount = "-75%",
+                    positive = true,
+                    stat = "gravety",
+                    amount = "reversed",
                     simepleAmount = CardInfoStat.SimpleAmount.notAssigned
-                },
+                }
             };
         }
         protected override CardThemeColor.CardThemeColorType GetTheme()
