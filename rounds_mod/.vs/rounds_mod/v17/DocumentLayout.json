@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "C:\\Users\\CEO I Matrix\\source\\repos\\rounds_mod\\rounds_mod\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{3F77D525-93A4-4506-8233-4D7835620ABF}|rounds_mod.csproj|c:\\users\\ceo i matrix\\source\\repos\\rounds_mod\\rounds_mod\\cards\\kfc bucket.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3F77D525-93A4-4506-8233-4D7835620ABF}|rounds_mod.csproj|solutionrelative:cards\\kfc bucket.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{3F77D525-93A4-4506-8233-4D7835620ABF}|rounds_mod.csproj|c:\\users\\ceo i matrix\\source\\repos\\rounds_mod\\rounds_mod\\rounds_mod.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3F77D525-93A4-4506-8233-4D7835620ABF}|rounds_mod.csproj|solutionrelative:rounds_mod.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -11,12 +15,12 @@
       "RelativeMoniker": "D:0:0:{3F77D525-93A4-4506-8233-4D7835620ABF}|rounds_mod.csproj|solutionrelative:cards\\maneuver.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3F77D525-93A4-4506-8233-4D7835620ABF}|rounds_mod.csproj|c:\\users\\ceo i matrix\\source\\repos\\rounds_mod\\rounds_mod\\rounds_mod.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
-      "RelativeMoniker": "D:0:0:{3F77D525-93A4-4506-8233-4D7835620ABF}|rounds_mod.csproj|solutionrelative:rounds_mod.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{3F77D525-93A4-4506-8233-4D7835620ABF}|rounds_mod.csproj|c:\\users\\ceo i matrix\\source\\repos\\rounds_mod\\rounds_mod\\cards\\template.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3F77D525-93A4-4506-8233-4D7835620ABF}|rounds_mod.csproj|solutionrelative:cards\\template.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3F77D525-93A4-4506-8233-4D7835620ABF}|rounds_mod.csproj|c:\\users\\ceo i matrix\\source\\repos\\rounds_mod\\rounds_mod\\rounds_mod.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{3F77D525-93A4-4506-8233-4D7835620ABF}|rounds_mod.csproj|solutionrelative:rounds_mod.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,11 +30,24 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
+              "Title": "KFC bucket.cs",
+              "DocumentMoniker": "C:\\Users\\CEO I Matrix\\source\\repos\\rounds_mod\\rounds_mod\\cards\\KFC bucket.cs",
+              "RelativeDocumentMoniker": "cards\\KFC bucket.cs",
+              "ToolTip": "C:\\Users\\CEO I Matrix\\source\\repos\\rounds_mod\\rounds_mod\\cards\\KFC bucket.cs",
+              "RelativeToolTip": "cards\\KFC bucket.cs",
+              "ViewState": "AQIAAAoAAAAAAAAAAAAwwBYAAABFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-30T20:49:29.09Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "rounds_mod.csproj",
               "DocumentMoniker": "C:\\Users\\CEO I Matrix\\source\\repos\\rounds_mod\\rounds_mod\\rounds_mod.csproj",
               "RelativeDocumentMoniker": "rounds_mod.csproj",
@@ -38,18 +55,17 @@
               "RelativeToolTip": "rounds_mod.csproj",
               "ViewState": "AQIAAAMAAAAAAAAAAAAAAAsAAAAEAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2024-06-26T18:16:04.758Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-26T18:16:04.758Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "Maneuver.cs",
               "DocumentMoniker": "C:\\Users\\CEO I Matrix\\source\\repos\\rounds_mod\\rounds_mod\\cards\\Maneuver.cs",
               "RelativeDocumentMoniker": "cards\\Maneuver.cs",
               "ToolTip": "C:\\Users\\CEO I Matrix\\source\\repos\\rounds_mod\\rounds_mod\\cards\\Maneuver.cs",
               "RelativeToolTip": "cards\\Maneuver.cs",
-              "ViewState": "AQIAABsAAAAAAAAAAAAkwCwAAAATAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAqwAwAAAASAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-26T20:00:34.728Z",
               "EditorCaption": ""
@@ -62,20 +78,19 @@
               "RelativeDocumentMoniker": "cards\\template.cs",
               "ToolTip": "C:\\Users\\CEO I Matrix\\source\\repos\\rounds_mod\\rounds_mod\\cards\\template.cs",
               "RelativeToolTip": "cards\\template.cs",
-              "ViewState": "AQIAABgAAAAAAAAAAAAkwCkAAAATAAAA",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAAAoAAAAaAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-26T18:16:03.377Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-26T18:16:03.377Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "rounds_mod.cs",
               "DocumentMoniker": "C:\\Users\\CEO I Matrix\\source\\repos\\rounds_mod\\rounds_mod\\rounds_mod.cs",
               "RelativeDocumentMoniker": "rounds_mod.cs",
               "ToolTip": "C:\\Users\\CEO I Matrix\\source\\repos\\rounds_mod\\rounds_mod\\rounds_mod.cs",
               "RelativeToolTip": "rounds_mod.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAB4AAAAtAAAA",
+              "ViewState": "AQIAAAoAAAAAAAAAAADwvxkAAAAhAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-24T20:04:34.7Z",
               "EditorCaption": ""

@@ -31,11 +31,17 @@ namespace rounds_mod
             var harmony = new Harmony(ModId);
             harmony.PatchAll();
         }
+
+        //-----------------------------------------------------------------------
+
         void Start()
         {
             CustomCard.BuildCard<Maneuver>();
+            CustomCard.BuildCard<KFC_Bucket>();
             instance = this;
 
         }
+
+        
     }
 }
