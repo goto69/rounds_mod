@@ -1,5 +1,4 @@
-﻿using ModdingUtils.MonoBehaviours;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -11,21 +10,21 @@ using UnityEngine;
 
 namespace rounds_mod.Cards
 {
-    class KFC_Bucket : CustomCard
+    class DriveBy : CustomCard
     {
         public override void SetupCard(CardInfo cardInfo, Gun gun, ApplyCardStats cardStats, CharacterStatModifiers statModifiers, Block block)
         {
             UnityEngine.Debug.Log($"[{rounds_mod.ModInitials}][Card] {GetTitle()} has been setup.");
-            statModifiers.health = 1.2f;
-            cardInfo.allowMultiple = false;
-            statModifiers.movementSpeed = 1.2f;
             //Edits values on card itself, which are then applied to the player in `ApplyCardStats`
+            cardInfo.categories = new CardCategory[]
+            {
+                
+            };
         }
         public override void OnAddCard(Player player, Gun gun, GunAmmo gunAmmo, CharacterData data, HealthHandler health, Gravity gravity, Block block, CharacterStatModifiers characterStats)
         {
             UnityEngine.Debug.Log($"[{rounds_mod.ModInitials}][Card] {GetTitle()} has been added to player {player.playerID}.");
             //Edits values on player when card is selected
-            ChangePlayerColor(player);
         }
         public override void OnRemoveCard(Player player, Gun gun, GunAmmo gunAmmo, CharacterData data, HealthHandler health, Gravity gravity, Block block, CharacterStatModifiers characterStats)
         {
@@ -36,11 +35,11 @@ namespace rounds_mod.Cards
 
         protected override string GetTitle()
         {
-            return "KFC Bucket";
+            return "DriveBy";
         }
         protected override string GetDescription()
         {
-            return "Bucket of Chicken Filet";
+            return "When you have Opps, Shoot up their block";
         }
         protected override GameObject GetCardArt()
         {
@@ -48,7 +47,7 @@ namespace rounds_mod.Cards
         }
         protected override CardInfo.Rarity GetRarity()
         {
-            return CardInfo.Rarity.Rare;
+            return CardInfo.Rarity.Common;
         }
         protected override CardInfoStat[] GetStats()
         {
@@ -57,24 +56,16 @@ namespace rounds_mod.Cards
                 new CardInfoStat()
                 {
                     positive = true,
-                    stat = "Health",
-                    amount = "+20%",
+                    stat = "Ammo",
+                    amount = "12",
                     simepleAmount = CardInfoStat.SimpleAmount.notAssigned
                 },
 
                 new CardInfoStat()
                 {
                     positive = true,
-                    stat = "Movement",
-                    amount = "+20%",
-                    simepleAmount = CardInfoStat.SimpleAmount.notAssigned
-                },
-
-                new CardInfoStat()
-                {
-                    positive = false,
-                    stat = "Black",
-                    amount = "become",
+                    stat = "AttackSpeed",
+                    amount = "+30%",
                     simepleAmount = CardInfoStat.SimpleAmount.notAssigned
                 }
             };
@@ -85,24 +76,7 @@ namespace rounds_mod.Cards
         }
         public override string GetModName()
         {
-            return "BBC Cards";
+            return "rounds_mod.ModInitials";
         }
-
-        private void ChangePlayerColor(Player player)
-        {
-            // Debug-Ausgabe, um zu überprüfen, ob die Methode aufgerufen wird
-            Debug.Log($"Farbe des Spielers ändern: {player.playerID}");
-
-            // Fügen Sie die ReversibleColorEffect zum Spieler hinzu
-            ReversibleColorEffect colorEffect = player.gameObject.AddComponent<ReversibleColorEffect>();
-            colorEffect.SetColor(Color.black);
-            colorEffect.SetLivesToEffect(1);
-
-            // Debug-Ausgabe, um zu überprüfen, ob die Farbe geändert wurde
-            Debug.Log($"Farbe des Spielers geändert: {player.playerID}");
-        }
-
-        
     }
 }
-
