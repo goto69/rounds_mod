@@ -95,3 +95,4 @@ C:\Users\goto6\OneDrive\Documents\GitHub\rounds_mod\rounds_mod\bin\Debug\netstan
 C:\Users\goto6\OneDrive\Documents\GitHub\rounds_mod\rounds_mod\obj\Debug\netstandard2.1\rounds_mod.csproj.Up2Date
 C:\Users\goto6\OneDrive\Documents\GitHub\rounds_mod\rounds_mod\obj\Debug\netstandard2.1\rounds_mod.dll
 C:\Users\goto6\OneDrive\Documents\GitHub\rounds_mod\rounds_mod\obj\Debug\netstandard2.1\rounds_mod.pdb
+C:\Users\goto6\OneDrive\Documents\GitHub\rounds_mod\rounds_mod\bin\Debug\netstandard2.1\ProjectileChargePatch.dll

@@ -4,6 +4,7 @@ using UnboundLib.Cards;
 using rounds_mod.Cards;
 using HarmonyLib;
 using CardChoiceSpawnUniqueCardPatch.CustomCategories;
+using GunChargePatch.Extensions;
 
 
 namespace rounds_mod
@@ -31,6 +32,7 @@ namespace rounds_mod
             var harmony = new Harmony(ModId);
             harmony.PatchAll();
         }
+
         void Start()
         {
             CustomCard.BuildCard<FlyByBlocking>();
@@ -38,6 +40,8 @@ namespace rounds_mod
             CustomCard.BuildCard<HeliumFillledBullets>();
             CustomCard.BuildCard<youCantMiss>();
             CustomCard.BuildCard<railgun>();
+            CustomCard.BuildCard<BBC>();
+            CustomCard.BuildCard<theSun>();
             instance = this;
         }
     }
