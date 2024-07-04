@@ -41,7 +41,9 @@ namespace rounds_mod
             CustomCard.BuildCard<youCantMiss>();
             CustomCard.BuildCard<railgun>();
             CustomCard.BuildCard<BBC>();
-            CustomCard.BuildCard<theSun>();
+            CustomCard.BuildCard<flashlight>();
+            CustomCard.BuildCard<unblockable>();
+            CustomCard.BuildCard<adrenaline>();
             instance = this;
         }
     }

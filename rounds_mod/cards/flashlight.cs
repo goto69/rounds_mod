@@ -10,7 +10,7 @@ using UnityEngine;
 
 namespace rounds_mod.Cards
 {
-    class theSun : CustomCard
+    class flashlight : CustomCard
     {
         public override void SetupCard(CardInfo cardInfo, Gun gun, ApplyCardStats cardStats, CharacterStatModifiers statModifiers, Block block)
         {
@@ -22,10 +22,6 @@ namespace rounds_mod.Cards
             gun.reloadTime = 0;
             gun.gravity = 0f;
             gun.destroyBulletAfter = 0.1f;
-            gun.bulletDamageMultiplier = 0f;
-            gun.shake = 0f;
-            gun.shakeM =  0f;
-            gun.bodyRecoil = 0.1f;
             //Edits values on card itself, which are then applied to the player in `ApplyCardStats`
         }
         public override void OnAddCard(Player player, Gun gun, GunAmmo gunAmmo, CharacterData data, HealthHandler health, Gravity gravity, Block block, CharacterStatModifiers characterStats)
@@ -64,15 +60,15 @@ namespace rounds_mod.Cards
                 new CardInfoStat()
                 {
                     positive = true,
-                    stat = "Effect",
-                    amount = "No",
+                    stat = "shooting",
+                    amount = "lightbeams",
                     simepleAmount = CardInfoStat.SimpleAmount.notAssigned
                 }
             };
         }
         protected override CardThemeColor.CardThemeColorType GetTheme()
         {
-            return CardThemeColor.CardThemeColorType.PoisonGreen;
+            return CardThemeColor.CardThemeColorType.MagicPink;
         }
         public override string GetModName()
         {
