@@ -7,24 +7,24 @@
       "RelativeMoniker": "D:0:0:{3F77D525-93A4-4506-8233-4D7835620ABF}|rounds_mod.csproj|solutionrelative:cards\\driveby.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3F77D525-93A4-4506-8233-4D7835620ABF}|rounds_mod.csproj|c:\\users\\ceo i matrix\\source\\repos\\rounds_mod\\rounds_mod\\rounds_mod.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3F77D525-93A4-4506-8233-4D7835620ABF}|rounds_mod.csproj|solutionrelative:rounds_mod.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{3F77D525-93A4-4506-8233-4D7835620ABF}|rounds_mod.csproj|c:\\users\\ceo i matrix\\source\\repos\\rounds_mod\\rounds_mod\\cards\\kfc bucket.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3F77D525-93A4-4506-8233-4D7835620ABF}|rounds_mod.csproj|solutionrelative:cards\\kfc bucket.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3F77D525-93A4-4506-8233-4D7835620ABF}|rounds_mod.csproj|c:\\users\\ceo i matrix\\source\\repos\\rounds_mod\\rounds_mod\\rounds_mod.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
-      "RelativeMoniker": "D:0:0:{3F77D525-93A4-4506-8233-4D7835620ABF}|rounds_mod.csproj|solutionrelative:rounds_mod.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+      "AbsoluteMoniker": "D:0:0:{3F77D525-93A4-4506-8233-4D7835620ABF}|rounds_mod.csproj|c:\\users\\ceo i matrix\\source\\repos\\rounds_mod\\rounds_mod\\rounds_mod.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3F77D525-93A4-4506-8233-4D7835620ABF}|rounds_mod.csproj|solutionrelative:rounds_mod.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3F77D525-93A4-4506-8233-4D7835620ABF}|rounds_mod.csproj|c:\\users\\ceo i matrix\\source\\repos\\rounds_mod\\rounds_mod\\cards\\template.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3F77D525-93A4-4506-8233-4D7835620ABF}|rounds_mod.csproj|solutionrelative:cards\\template.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{3F77D525-93A4-4506-8233-4D7835620ABF}|rounds_mod.csproj|c:\\users\\ceo i matrix\\source\\repos\\rounds_mod\\rounds_mod\\cards\\maneuver.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3F77D525-93A4-4506-8233-4D7835620ABF}|rounds_mod.csproj|solutionrelative:cards\\maneuver.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3F77D525-93A4-4506-8233-4D7835620ABF}|rounds_mod.csproj|c:\\users\\ceo i matrix\\source\\repos\\rounds_mod\\rounds_mod\\cards\\template.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3F77D525-93A4-4506-8233-4D7835620ABF}|rounds_mod.csproj|solutionrelative:cards\\template.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{3F77D525-93A4-4506-8233-4D7835620ABF}|rounds_mod.csproj|c:\\users\\ceo i matrix\\source\\repos\\rounds_mod\\rounds_mod\\rounds_mod.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{3F77D525-93A4-4506-8233-4D7835620ABF}|rounds_mod.csproj|solutionrelative:rounds_mod.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
     }
   ],
   "DocumentGroupContainers": [
@@ -44,27 +44,26 @@
               "RelativeDocumentMoniker": "cards\\driveby.cs",
               "ToolTip": "C:\\Users\\CEO I Matrix\\source\\repos\\rounds_mod\\rounds_mod\\cards\\driveby.cs",
               "RelativeToolTip": "cards\\driveby.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAAAQAAAA",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAAABMAAAArAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-07-01T20:00:50.64Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "KFC bucket.cs",
               "DocumentMoniker": "C:\\Users\\CEO I Matrix\\source\\repos\\rounds_mod\\rounds_mod\\cards\\KFC bucket.cs",
               "RelativeDocumentMoniker": "cards\\KFC bucket.cs",
               "ToolTip": "C:\\Users\\CEO I Matrix\\source\\repos\\rounds_mod\\rounds_mod\\cards\\KFC bucket.cs",
               "RelativeToolTip": "cards\\KFC bucket.cs",
-              "ViewState": "AQIAADwAAAAAAAAAAAAUwFUAAAArAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAFgAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-30T20:49:29.09Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-30T20:49:29.09Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "rounds_mod.csproj",
               "DocumentMoniker": "C:\\Users\\CEO I Matrix\\source\\repos\\rounds_mod\\rounds_mod\\rounds_mod.csproj",
               "RelativeDocumentMoniker": "rounds_mod.csproj",
@@ -72,8 +71,7 @@
               "RelativeToolTip": "rounds_mod.csproj",
               "ViewState": "AQIAAAMAAAAAAAAAAAAAAAsAAAAEAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2024-06-26T18:16:04.758Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-26T18:16:04.758Z"
             },
             {
               "$type": "Document",
@@ -83,34 +81,33 @@
               "RelativeDocumentMoniker": "cards\\Maneuver.cs",
               "ToolTip": "C:\\Users\\CEO I Matrix\\source\\repos\\rounds_mod\\rounds_mod\\cards\\Maneuver.cs",
               "RelativeToolTip": "cards\\Maneuver.cs",
-              "ViewState": "AQIAACEAAAAAAAAAAAAowBYAAAAKAAAA",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAqwBYAAAAKAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-26T20:00:34.728Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 3,
               "Title": "template.cs",
               "DocumentMoniker": "C:\\Users\\CEO I Matrix\\source\\repos\\rounds_mod\\rounds_mod\\cards\\template.cs",
               "RelativeDocumentMoniker": "cards\\template.cs",
               "ToolTip": "C:\\Users\\CEO I Matrix\\source\\repos\\rounds_mod\\rounds_mod\\cards\\template.cs",
               "RelativeToolTip": "cards\\template.cs",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAAAAoAAAAaAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAaAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-26T18:16:03.377Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "rounds_mod.cs",
               "DocumentMoniker": "C:\\Users\\CEO I Matrix\\source\\repos\\rounds_mod\\rounds_mod\\rounds_mod.cs",
               "RelativeDocumentMoniker": "rounds_mod.cs",
               "ToolTip": "C:\\Users\\CEO I Matrix\\source\\repos\\rounds_mod\\rounds_mod\\rounds_mod.cs",
               "RelativeToolTip": "rounds_mod.cs",
-              "ViewState": "AQIAACkAAAAAAAAAAAAswC4AAAAcAAAA",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAADAAAAAMAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-24T20:04:34.7Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-24T20:04:34.7Z"
             }
           ]
         }

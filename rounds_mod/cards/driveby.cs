@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ModdingUtils.MonoBehaviours;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -16,15 +17,24 @@ namespace rounds_mod.Cards
         {
             UnityEngine.Debug.Log($"[{rounds_mod.ModInitials}][Card] {GetTitle()} has been setup.");
             //Edits values on card itself, which are then applied to the player in `ApplyCardStats`
-            cardInfo.categories = new CardCategory[]
-            {
-                
-            };
+            statModifiers.movementSpeed = 2f;
+            statModifiers.attackSpeedMultiplier = 3f;
+            statModifiers.numberOfJumps = 10;
+            
         }
         public override void OnAddCard(Player player, Gun gun, GunAmmo gunAmmo, CharacterData data, HealthHandler health, Gravity gravity, Block block, CharacterStatModifiers characterStats)
         {
             UnityEngine.Debug.Log($"[{rounds_mod.ModInitials}][Card] {GetTitle()} has been added to player {player.playerID}.");
             //Edits values on player when card is selected
+            gunAmmo.maxAmmo = 35;
+            gun.bulletDamageMultiplier = 2f;
+            gun.dontAllowAutoFire = false;
+            gun.projectileColor = Color.white;
+            gun.bursts = 7;
+            gun.timeBetweenBullets = 0.1f;
+            gunAmmo.reloadTime = 0.8f;
+            gun.projectileSpeed = 1.5f;
+            gun.numberOfProjectiles = 2;
         }
         public override void OnRemoveCard(Player player, Gun gun, GunAmmo gunAmmo, CharacterData data, HealthHandler health, Gravity gravity, Block block, CharacterStatModifiers characterStats)
         {
@@ -56,27 +66,35 @@ namespace rounds_mod.Cards
                 new CardInfoStat()
                 {
                     positive = true,
-                    stat = "Ammo",
-                    amount = "12",
+                    stat = "35 Rounds Glock Speed Mag",
+                    amount = "California non-compliant",
                     simepleAmount = CardInfoStat.SimpleAmount.notAssigned
                 },
 
                 new CardInfoStat()
                 {
                     positive = true,
-                    stat = "AttackSpeed",
-                    amount = "+30%",
+                    stat = "Speed Trigger",
+                    amount = "ATF non-approved",
+                    simepleAmount = CardInfoStat.SimpleAmount.notAssigned
+                },
+
+                new CardInfoStat()
+                {
+                    positive = true,
+                    stat = "SUV",
+                    amount = "Mercedes",
                     simepleAmount = CardInfoStat.SimpleAmount.notAssigned
                 }
             };
         }
         protected override CardThemeColor.CardThemeColorType GetTheme()
         {
-            return CardThemeColor.CardThemeColorType.ColdBlue;
+            return CardThemeColor.CardThemeColorType.DestructiveRed;
         }
         public override string GetModName()
         {
-            return "rounds_mod.ModInitials";
+            return "BBC Cards";
         }
     }
 }

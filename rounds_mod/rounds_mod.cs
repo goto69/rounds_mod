@@ -44,30 +44,12 @@ namespace rounds_mod
         {
             CustomCard.BuildCard<Maneuver>();
             CustomCard.BuildCard<KFC_Bucket>();
-            instance = this;
             CustomCard.BuildCard<DriveBy>();
-
-            // Register card categories
-            KeysCards.RequiredForDriveBy = CustomCardCategories.instance.CardCategory("RequiredForDriveBy");
-
-            // Add KFC Bucket to the required category for DriveBy
-            CardManager.cards["KFC_Bucket"].cardInfo.categories =
-                CollectionExtensions.AddToArray(CardManager.cards["KFC_Bucket"].cardInfo.categories, KeysCards.RequiredForDriveBy);
+            instance = this;
+            
         }
 
         
     }
-    [HarmonyPatch(typeof(CardChoice))]
-    [HarmonyPatch("Spawn")]
-    class CardChoicePatch
-    {
-        static void Postfix(ref List<CardInfo> ___currentCards, Player player)
-        {
-            // Check if the player has the required card
-            bool hasKFCBucket = player.data.currentCards.Any(card => card.cardName == "KFC Bucket");
-
-            // Filter out DriveBy if the player doesn't have KFC Bucket
-            ___currentCards = ___currentCards.Where(card => card.cardName != "DriveBy" || hasKFCBucket).ToList();
-        }
-    }
+    
 }
