@@ -1,5 +1,4 @@
-﻿using ModdingUtils.MonoBehaviours;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -7,6 +6,7 @@ using System.Threading.Tasks;
 using UnboundLib;
 using UnboundLib.Cards;
 using UnityEngine;
+
 
 
 namespace rounds_mod.Cards
@@ -20,7 +20,7 @@ namespace rounds_mod.Cards
             statModifiers.movementSpeed = 2f;
             statModifiers.attackSpeedMultiplier = 3f;
             statModifiers.numberOfJumps = 10;
-            
+
         }
         public override void OnAddCard(Player player, Gun gun, GunAmmo gunAmmo, CharacterData data, HealthHandler health, Gravity gravity, Block block, CharacterStatModifiers characterStats)
         {
@@ -94,7 +94,7 @@ namespace rounds_mod.Cards
         }
         public override string GetModName()
         {
-            return "BBC Cards";
+            return "rounds_mod.ModInitials";
         }
     }
 }

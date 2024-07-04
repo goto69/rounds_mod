@@ -85,7 +85,7 @@ namespace rounds_mod.Cards
         }
         public override string GetModName()
         {
-            return "BBC Cards";
+            return "rounds_mod.ModInitials";
         }
 
         private void ChangePlayerColor(Player player)
@@ -102,6 +102,6 @@ namespace rounds_mod.Cards
             Debug.Log($"Farbe des Spielers geändert: {player.playerID}");
         }
 
-        
+
     }
 }
