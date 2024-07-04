@@ -42,6 +42,7 @@ namespace rounds_mod
             CustomCard.BuildCard<railgun>();
             CustomCard.BuildCard<BBC>();
             CustomCard.BuildCard<theSun>();
+            CustomCard.BuildCard<GetOverHere>();
             instance = this;
         }
     }
