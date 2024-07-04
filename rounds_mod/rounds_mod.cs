@@ -45,6 +45,7 @@ namespace rounds_mod
             CustomCard.BuildCard<flashlight>();
             CustomCard.BuildCard<unblockable>();
             CustomCard.BuildCard<KFC_Bucket>();
+            CustomCard.BuildCard<DriveBy>();
             instance = this;
         }
     }
