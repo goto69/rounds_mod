@@ -85,7 +85,7 @@ namespace rounds_mod.Cards
         }
         public override string GetModName()
         {
-            return "rounds_mod.ModInitials";
+            return "rounds.ModInitials";
         }
 
         private void ChangePlayerColor(Player player)

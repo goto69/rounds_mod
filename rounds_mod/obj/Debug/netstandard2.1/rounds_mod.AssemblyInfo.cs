@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("rounds_mod")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7107e6b6440f5edbee3579b631d1dd8fcc40a34b")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+4c16b9afa7c98b796bc0c255289408b01ba42fc2")]
 [assembly: System.Reflection.AssemblyProductAttribute("rounds_mod")]
 [assembly: System.Reflection.AssemblyTitleAttribute("rounds_mod")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

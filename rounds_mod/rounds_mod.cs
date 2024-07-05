@@ -19,9 +19,9 @@ namespace rounds_mod
     [BepInProcess("Rounds.exe")]
     public class rounds_mod : BaseUnityPlugin
     {
-        public const string ModInitials = "him";
-        private const string ModId = "com.gotot.rounds.rounds_mod";
-        private const string ModName = "rounds_mod";
+        public const string ModInitials = "himm";
+        private const string ModId = "com.goto.rounds.rounds_mod";
+        private const string ModName = "rounds";
         public const string Version = "1.0.0"; // What version are we on (major.minor.patch)?
 
         public static rounds_mod instance { get; private set; }
